@@ -1,0 +1,43 @@
+/* Estilos para el componente entero */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  mat-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Centrar horizontalmente si no ocupa toda la altura */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  
+  mat-form-field {
+    width: 100%; /* Asegura que ocupe todo el ancho del card */
+    margin-top: 16px;
+  }
+  
+  input {
+    font-size: 16px; /* Tamaño de fuente más grande para facilidad de lectura */
+  }
+  
+  button {
+    width: 100%; /* Asegura que el botón ocupe todo el ancho */
+    margin-top: 20px; /* Espacio antes del botón */
+  }
+
+  @media (max-width: 600px) {
+    mat-card {
+      margin: 20px; /* Más margen en dispositivos pequeños */
+      width: auto; /* Ajusta el ancho para pequeños dispositivos */
+    }
+  
+    mat-form-field {
+      margin-top: 8px; /* Menos margen entre campos */
+    }
+  }
+  
+  
